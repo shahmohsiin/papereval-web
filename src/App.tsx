@@ -1,6 +1,4 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { Zap } from 'lucide-react';
 import LandingPage from './LandingPage';
 import PrivacyPolicy from './PrivacyPolicy';
 
