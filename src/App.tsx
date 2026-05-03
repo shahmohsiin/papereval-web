@@ -1,4 +1,6 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Zap } from 'lucide-react';
 import LandingPage from './LandingPage';
 import PrivacyPolicy from './PrivacyPolicy';
 
@@ -31,6 +33,7 @@ function App() {
             <p style={{ marginBottom: '16px' }}>© {new Date().getFullYear()} PaperEval. All rights reserved.</p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: '24px' }}>
               <Link to="/privacy-policy" style={{ color: 'var(--text-muted)' }}>Privacy Policy</Link>
+              <Link to="/privacy-policy#deletion" style={{ color: 'var(--text-muted)' }}>Data Deletion</Link>
               <a href="mailto:learncas@gmail.com" style={{ color: 'var(--text-muted)' }}>Contact Support</a>
             </div>
           </div>

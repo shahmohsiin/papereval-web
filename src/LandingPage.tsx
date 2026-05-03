@@ -1,3 +1,4 @@
+import React from 'react';
 import { Shield, Search, CheckCircle2, ChevronRight, Play } from 'lucide-react';
 
 export default function LandingPage() {

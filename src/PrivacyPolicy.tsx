@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Shield, ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -79,12 +79,13 @@ export default function PrivacyPolicy() {
           </ul>
         </div>
 
-        <div className="privacy-section">
-          <h3>6. Data Retention & Deletion</h3>
+        <div className="privacy-section" id="deletion">
+          <h3>6. Data Retention & Account Deletion</h3>
           <ul>
-            <li>Evaluation history is retained as long as your account is active.</li>
-            <li>You can delete individual evaluations from within the app at any time.</li>
-            <li>To request full account deletion and removal of all your personal data, you can contact us at <strong>learncas@gmail.com</strong>. We will process your deletion request within 30 days.</li>
+            <li><strong>Evaluation History:</strong> Your evaluation records are retained as long as your account is active. You can delete individual evaluations from within the app at any time.</li>
+            <li><strong>In-App Account Deletion:</strong> You can permanently delete your account and all associated data directly within the App. Go to <strong>Account &gt; Delete Account</strong>. You will be asked to confirm your password, after which your account, evaluation history, and uploaded images will be immediately and permanently removed from our servers.</li>
+            <li><strong>Manual Deletion Request:</strong> Alternatively, to request full account deletion and removal of all your personal data, you can contact us at <strong>learncas@gmail.com</strong>. We will process your deletion request within 30 days.</li>
+            <li><strong>What data is deleted?</strong> Upon account deletion, we remove your email, hashed password, all evaluation summaries, and all image URLs associated with your user ID.</li>
           </ul>
         </div>
 
