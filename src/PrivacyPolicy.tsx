@@ -4,7 +4,14 @@ import { Link } from 'react-router-dom';
 
 export default function PrivacyPolicy() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (window.location.hash) {
+      const element = document.getElementById(window.location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, []);
 
   return (
